@@ -1,4 +1,9 @@
 #carouselComponents {
+    .carouselMenu {
+        button {
+            font-size: 20px;
+        }
+    }
     .carousel-inner {
         .carousel-item {
             overflow-y: scroll;
