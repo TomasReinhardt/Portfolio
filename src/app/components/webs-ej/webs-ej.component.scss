@@ -84,7 +84,7 @@
             .infoP {
                 position: fixed;
                 width: 80%;
-                max-width: 600px;
+                max-width: 800px;
                 height: 350px;
                 top: 100px;
                 border-radius: 20px;
@@ -131,7 +131,7 @@
                     overflow-y: scroll;
                     overflow-x: hidden;
                     padding: 10px;
-                    font-size: 20px;
+                    font-size: 16px;
                     p,ul {
                         margin-bottom: 15px;
                     }
@@ -149,6 +149,9 @@
                         }
                         li {
                             list-style: none;
+                            text-align: left;
+                            width: 80%;
+                            margin: 0 auto;
                         }
                     }
                 }
