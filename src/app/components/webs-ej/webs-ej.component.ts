@@ -89,6 +89,8 @@ export class WebsEjComponent implements OnInit {
 
   close() {
     $('.auxInfoP').fadeOut(300);
+    this.Project.description = this.typeProject+"//"+this.Project.description;
+
   }
 
   hoverSVG(child:any) {
