@@ -36,7 +36,6 @@ export class EditclientsComponent implements OnInit {
     this._DataService.getStudies().subscribe(
       response => {
         this.Studies = response.result;
-        console.log(this.Studies);
       },
       err => {
         console.log("-------------------------");
