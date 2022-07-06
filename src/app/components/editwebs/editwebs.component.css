@@ -57,6 +57,7 @@
 #webEj #projects .item-project .img img {
   width: 60px;
   height: 60px;
+  border: 2px solid black;
 }
 
 #webEj #projects .item-project:hover {
