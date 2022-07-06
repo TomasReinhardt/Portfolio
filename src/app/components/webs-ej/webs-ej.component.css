@@ -173,13 +173,13 @@
   font-size: 16px;
 }
 
-#webEj #projects .auxInfoP .infoP .boxInfo p, #webEj #projects .auxInfoP .infoP .boxInfo ul {
-  margin-bottom: 15px;
-}
-
 #webEj #projects .auxInfoP .infoP .boxInfo p {
   width: 90%;
   margin: 0 auto;
+}
+
+#webEj #projects .auxInfoP .infoP .boxInfo p, #webEj #projects .auxInfoP .infoP .boxInfo ul {
+  margin-bottom: 15px;
 }
 
 #webEj #projects .auxInfoP .infoP .boxInfo ul h4 {
