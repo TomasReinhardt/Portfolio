@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Amatic';
-  src: url("./fonts/Amatic/AmaticSC-Regular.ttf");
+  font-family: 'ShadowsIntoLight';
+  src: url("./fonts/Shadows_into_Light/ShadowsIntoLight-Regular.ttf");
 }
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Amatic';
+  font-family: 'ShadowsIntoLight';
   background-color: #0f0f0f;
   color: #7bbf2b;
 }
