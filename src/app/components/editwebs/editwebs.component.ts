@@ -77,6 +77,8 @@ export class EditwebsComponent implements OnInit {
     }
     this.CaracteristicasProject = [];
     this.ToolsProject = [];
+    this.typeProject = "";
+
 
     this.Project = this.Projects[id];
     let aux = this.Project.caracteristicas.split("///");

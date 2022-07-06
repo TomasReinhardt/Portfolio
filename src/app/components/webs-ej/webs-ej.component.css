@@ -118,7 +118,8 @@
   position: fixed;
   width: 80%;
   max-width: 800px;
-  height: 350px;
+  height: 65%;
+  max-height: 600px;
   top: 100px;
   border-radius: 20px;
   overflow: hidden;
@@ -131,7 +132,7 @@
 }
 
 #webEj #projects .auxInfoP .infoP .titleInfo {
-  height: 12%;
+  height: 40px;
 }
 
 #webEj #projects .auxInfoP .infoP .titleInfo h3 {
@@ -176,8 +177,13 @@
   margin-bottom: 15px;
 }
 
+#webEj #projects .auxInfoP .infoP .boxInfo p {
+  width: 90%;
+  margin: 0 auto;
+}
+
 #webEj #projects .auxInfoP .infoP .boxInfo ul h4 {
-  width: 80%;
+  width: 90%;
   height: 32px;
   margin: 0 auto;
   margin-bottom: 10px;
