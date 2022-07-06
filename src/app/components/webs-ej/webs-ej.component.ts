@@ -24,6 +24,7 @@ export class WebsEjComponent implements OnInit {
   }
   public CaracteristicasProject: string[] = [];
   public ToolsProject: string[] = [];
+  typeProject: string = "";
 
   constructor(
     public _router: Router,
@@ -75,6 +76,11 @@ export class WebsEjComponent implements OnInit {
     for (let i = 0; i < aux2.length; i++) {
       this.ToolsProject.push(aux2[i]);
     }
+
+    aux = this.Project.description.split("//");
+
+    this.Project.description = aux[1];
+    this.typeProject = aux[0];
 
     $('.auxInfoP').fadeIn(300);
     
