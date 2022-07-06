@@ -99,8 +99,8 @@
         .tool {
             width: 50%;
             .aux {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
                 margin: 0 auto;
                 margin-bottom: 30px;
                 border-radius: 10%;
@@ -108,15 +108,15 @@
                 border-right: 1px dashed lightgreen;
                 transition: all 600ms;
                 img {
-                    width: 80px;
-                    height: 80px;
+                    width: 100px;
+                    height: 100px;
                     transition: all 600ms;
                 }
                 span {
                     justify-content: center;
                     align-items: center;
-                    width: 80px;
-                    height: 80px;
+                    width: 100px;
+                    height: 100px;
                     font-size: 18px;
                     color: black;
                     display: none;

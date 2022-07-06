@@ -140,8 +140,8 @@
 }
 
 #editInicio .toolsDiv div img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   -webkit-transition: all 600ms;
   transition: all 600ms;
 }
