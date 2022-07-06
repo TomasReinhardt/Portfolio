@@ -1,0 +1,25 @@
+CREATE TABLE `proyects` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `description` text NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `link_git` varchar(255) NOT NULL,
+  `link_web` varchar(255) NOT NULL,
+  `caracteristicas` text NOT NULL,
+  PRIMARY KEY (`id`)
+) 
+
+CREATE TABLE `portafolio`.`users` ( 
+    `id` INT(11) NOT NULL AUTO_INCREMENT , 
+    `username` VARCHAR(50) NOT NULL , 
+    `password` VARCHAR(255) NOT NULL , 
+    PRIMARY KEY (`id`)
+)
+
+CREATE TABLE `portafolio`.`studies` ( 
+    `id` INT(11) NOT NULL AUTO_INCREMENT , 
+    `name` VARCHAR(50) NOT NULL , 
+    `state` VARCHAR(50) NOT NULL , 
+    `institucion` VARCHAR(100) NOT NULL , 
+    `title` VARCHAR(255) NOT NULL , 
+    PRIMARY KEY (`id`)
+)

@@ -1,0 +1,23 @@
+<div id="carouselComponents" class="carousel slide carousel-fade" data-bs-touch="false" data-interval="false"  *ngIf="!loading">
+  <div class="carouselMenu">
+    <button type="button" id="menu1" data-bs-target="#carouselComponents" data-bs-slide-to="0" class="menuBu active activo" aria-current="true" aria-label="Slide 1" (click)="addActive('menu1')" onclick="$('#item1').animate({ scrollTop: '0px'},300);">Inicio</button>
+    <button type="button" id="menu2" data-bs-target="#carouselComponents" data-bs-slide-to="1" class="menuBu" aria-label="Slide 2" (click)="addActive('menu2')" onclick="$('#item2').animate({ scrollTop: '0px'},300);">Estudios</button>
+    <button type="button" id="menu3" data-bs-target="#carouselComponents" data-bs-slide-to="2" class="menuBu" aria-label="Slide 3" (click)="addActive('menu3')" onclick="$('#item3').animate({ scrollTop: '0px'},300);">Proyectos</button>
+  </div>
+  <div class="carousel-inner">
+    <div id="item1" class="carousel-item active">
+      <app-inicio></app-inicio>
+    </div>
+    <div id="item2" class="carousel-item">
+      <app-webs-clients></app-webs-clients>
+    </div>
+    <div id="item3" class="carousel-item">
+      <app-webs-ej></app-webs-ej>
+    </div>
+  </div>
+</div>
+<div class="loadingAPI" *ngIf="loading">
+  <span>
+    <span></span>
+  </span>
+</div>

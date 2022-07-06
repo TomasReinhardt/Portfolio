@@ -1,0 +1,30 @@
+<div id="carouselComponents" class="carousel slide carousel-fade" data-bs-touch="false" data-interval="false" *ngIf="!loading">
+  <div class="carouselMenu">
+    <button type="button" id="menu1" data-bs-target="#carouselComponents" data-bs-slide-to="0" class="menuBu active activo" aria-current="true" aria-label="Slide 1" (click)="addActive('menu1')" (click)="addActive('menu1')" onclick="$('#item1').animate({ scrollTop: '0px'},300);">inicio</button>
+    <button type="button" id="menu2" data-bs-target="#carouselComponents" data-bs-slide-to="1" class="menuBu" aria-label="Slide 1" (click)="addActive('menu2')" (click)="addActive('menu2')" onclick="$('#item2').animate({ scrollTop: '0px'},300);">Estudios</button>
+    <button type="button" id="menu3" data-bs-target="#carouselComponents" data-bs-slide-to="2" class="menuBu" aria-label="Slide 2" (click)="addActive('menu3')" (click)="addActive('menu3')" onclick="$('#item3').animate({ scrollTop: '0px'},300);">Proyectos</button>
+  </div>
+  <div class="carousel-inner">
+    <div id="item1" class="carousel-item">
+      <app-edit-icicio></app-edit-icicio>
+    </div>
+    <div id="item2" class="carousel-item">
+      <app-editclients></app-editclients>
+    </div>
+    <div id="item3" class="carousel-item active">
+      <app-editwebs></app-editwebs>
+    </div>
+  </div>
+  <div id="logOut" class="fixed-bottom"> 
+    <button (click)="logOut()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#333" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+<div class="loadingAPI" *ngIf="loading">
+  <span>
+    <span></span>
+  </span>
+</div>

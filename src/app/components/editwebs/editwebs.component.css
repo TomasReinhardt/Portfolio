@@ -1,0 +1,272 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#webEj {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+#webEj #projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+#webEj #projects .item-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  min-height: 80px;
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-radius: 20px;
+  border: 1px dashed #7bbf2b;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#webEj #projects .item-project .img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+#webEj #projects .item-project .img img {
+  width: 60px;
+  height: 60px;
+}
+
+#webEj #projects .item-project:hover {
+  border: 1px dashed transparent;
+  background-color: #7bbf2b;
+  color: black;
+}
+
+#webEj #projects .auxInfoP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#webEj #projects .auxInfoP .infoP {
+  position: fixed;
+  width: 80%;
+  max-width: 600px;
+  height: 350px;
+  top: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 5px double #7bbf2b;
+  background-image: url("../../../assets/css/img/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1001;
+}
+
+#webEj #projects .auxInfoP .infoP .titleInfo {
+  height: 12%;
+}
+
+#webEj #projects .auxInfoP .infoP .titleInfo h3 {
+  border-bottom: 5px double black;
+  color: black;
+  background-color: #7bbf2b;
+  font-size: 1.75rem;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#webEj #projects .auxInfoP .infoP .titleInfo svg {
+  position: absolute;
+  color: black;
+  right: 0px;
+  margin-top: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#webEj #projects .auxInfoP .infoP .titleInfo .bi-pencil-square {
+  margin-right: 40px;
+}
+
+#webEj #projects .auxInfoP .infoP .svgHover h3 {
+  background-color: black;
+  color: #7bbf2b;
+  border-bottom: 5px double #7bbf2b;
+}
+
+#webEj #projects .auxInfoP .infoP .svgHover svg {
+  color: #7bbf2b;
+}
+
+#webEj #projects .auxInfoP .infoP .boxInfo {
+  height: 88%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#webEj #projects .auxInfoP .infoP .boxInfo p, #webEj #projects .auxInfoP .infoP .boxInfo ul {
+  margin-bottom: 15px;
+}
+
+#webEj #projects .auxInfoP .infoP .boxInfo ul h4 {
+  width: 80%;
+  height: 32px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #7bbf2b;
+  border-top: 1px dashed #7bbf2b;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  text-align: center;
+  -webkit-animation: H4effect 700ms infinite linear;
+          animation: H4effect 700ms infinite linear;
+}
+
+#webEj #projects .auxInfoP .infoP .boxInfo ul li {
+  list-style: none;
+}
+
+#webEj .formProject {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#webEj .formProject #formProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#webEj .formProject #formProject input, #webEj .formProject #formProject textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 1px dashed #7bbf2b;
+  background-color: transparent;
+  color: #7bbf2b;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#webEj .formProject #formProject input[type="text"]:focus, #webEj .formProject #formProject textarea:focus {
+  border: 1px dashed transparent;
+  background-color: #7bbf2b;
+  color: black;
+  outline: none;
+}
+
+#webEj .formProject #formProject .buttonForm {
+  width: 100%;
+}
+
+#webEj .formProject #formProject .buttonForm input[type="submit"] {
+  width: auto;
+  font-size: 22px;
+  padding: 10px;
+}
+
+#webEj .formProject #formProject .buttonForm input[type="submit"]:hover {
+  background-color: #7bbf2b;
+  border: 1px solid #7bbf2b;
+  color: black;
+}
+
+#webEj .formProject #formProject ngx-dropzone {
+  height: auto;
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: 1px dashed #7bbf2b;
+  color: #7bbf2b;
+  background-color: transparent;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#webEj .formProject #formProject ngx-dropzone:hover {
+  border: 1px dashed transparent;
+  color: black;
+  background-color: #7bbf2b;
+}
+
+@-webkit-keyframes H4effect {
+  0% {
+    border-bottom-color: #7bbf2b;
+    border-top-color: #7bbf2b;
+    color: #7bbf2b;
+  }
+  50% {
+    border-bottom-color: #b0ff55;
+    border-top-color: #b0ff55;
+    color: #b0ff55;
+  }
+  100% {
+    border-bottom-color: #7bbf2b;
+    border-top-color: #7bbf2b;
+    color: #7bbf2b;
+  }
+}
+
+@keyframes H4effect {
+  0% {
+    border-bottom-color: #7bbf2b;
+    border-top-color: #7bbf2b;
+    color: #7bbf2b;
+  }
+  50% {
+    border-bottom-color: #b0ff55;
+    border-top-color: #b0ff55;
+    color: #b0ff55;
+  }
+  100% {
+    border-bottom-color: #7bbf2b;
+    border-top-color: #7bbf2b;
+    color: #7bbf2b;
+  }
+}
+/*# sourceMappingURL=editwebs.component.css.map */

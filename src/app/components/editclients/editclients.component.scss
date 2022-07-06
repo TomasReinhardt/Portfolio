@@ -1,0 +1,130 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+#clients {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+    .accordion {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .accordion-item {
+            width: 80%;
+            margin-bottom: 20px;
+            background-color: transparent !important;
+            .accordion-header {
+                margin-bottom: 10px;
+                button {
+                    border: 2px dashed #7bbf2b;
+                    border-radius: 20px !important;
+                    font-size: 30px;
+                    padding: 5px 10px;
+                    background-color: #7bbf2b;
+                    color: black;
+                }
+                button:focus {
+                    box-shadow: none;
+                }
+                .collapsed {
+                    background-color: transparent;
+                    color: #7bbf2b;
+                }
+                .collapsed::after{
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237bbf2b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                }
+                button:not(.collapsed)::after{
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                }
+            }
+            .accordion-collapse {
+                .accordion-body {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    border: 2px dashed #7bbf2b;
+                    background-color: transparent;
+                    color: #7bbf2b;
+                    span {
+                        width: 100%;
+                        display: block;
+                        text-align: left;
+                        font-size: 25px;
+                        i {
+                            color: gray;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #7bbf2b;
+                        }
+                        a:hover {
+                            animation-duration: 1s;
+                            animation-name: parpadeoSolido2;
+                            animation-iteration-count: infinite;
+                        }
+                    }
+                    .buttons {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: end;
+                        width: 100%;
+                        svg {
+                            width: 32px;
+                            margin: 5px 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+               
+            }
+            
+        }
+    }
+
+    .formStudie {
+        margin-bottom: 20px;
+        form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            input[type="text"] {
+                width: 80%;
+                margin-bottom: 10px;
+                border-radius: 20px;
+                padding-left: 20px;
+                font-size: 22px;
+                border: 1px dashed #7bbf2b;
+                background-color: transparent;
+                color: #7bbf2b;
+                transition: all 300ms;
+            }
+            input[type="text"]:focus {
+                border: 1px dashed transparent;
+                background-color: #7bbf2b;
+                color: black;
+                outline: none;
+            }
+            span {
+                width: 80%;
+                input[type="submit"] {
+                    font-size: 22px;
+                    padding: 10px;
+                    background-color: transparent;
+                    border: 1px dashed #7bbf2b;
+                    border-radius: 20px;
+                    color: #7bbf2b;
+                    transition: all 300ms;
+                }
+                input[type="submit"]:hover {
+                    background-color: #7bbf2b;
+                    border: 1px solid #7bbf2b;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+

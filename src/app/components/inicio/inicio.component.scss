@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#inicio {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    .imgPerfil {
+        width: 100%;
+        margin: 30px 0px;
+        img {
+            width: 80%;
+            max-width: 200px;
+            border-radius: 100%;
+            animation-duration: 3s;
+            animation-name: parpadeo;
+            animation-iteration-count: infinite;
+        }
+    }
+    .description {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-bottom: 30px;
+        h3 {
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        p {
+            font-size: 28px;
+            text-align: justify;
+        }
+    }
+    .CV {
+        width: 80%;
+        margin-bottom: 30px;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            text-decoration: none;
+            border-radius: 100%;
+            border: 1px dashed transparent;
+            border-left-color: lightgreen;
+            border-right-color: lightgreen;
+            color: #7bbf2b;
+            transition: all 600ms;
+            span {
+                display: block;
+                width: 50px;
+                height: 50px;
+                font-size: 30px;
+                line-height: 50px;
+                border-radius: 100%;
+                transition: all 300ms;
+            }
+        }
+        a:hover {
+            transform: rotate(360deg);
+            border-color: lightgreen;
+            span {
+                background-color: transparent;
+                color: rgba(0,0,0,0);
+                animation-delay: 500ms;
+                animation-duration: 3s;
+                animation-name: parpadeoSolido;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    .toolsDiv {
+        margin-bottom: 30px;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .titleTools {
+            width: 100%;
+            h3 {
+                width: 200px;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                font-size: 30px;
+                border-bottom: 1px dashed lightgreen;
+            }
+        }
+        .tool {
+            width: 50%;
+            .aux {
+                width: 80px;
+                height: 80px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                border-radius: 10%;
+                border-left: 1px dashed lightgreen;
+                border-right: 1px dashed lightgreen;
+                transition: all 600ms;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    transition: all 600ms;
+                }
+                span {
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                    height: 80px;
+                    font-size: 22px;
+                    color: black;
+                    display: none;
+                    transition: all 600ms;
+                    transform: rotate(180deg);
+                }
+            }
+            .aux:hover {
+                border-radius: 100%;
+                border: 1px dashed #7bbf2b;
+                transform: rotate(180deg);
+                background-color: #7bbf2b;
+                img {
+                    display: none;
+                }
+                span {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        box-shadow: 0px 0px 30px 2px #7bbf2b;
+    }
+    50% {
+        box-shadow: 0px 0px 30px 2px transparent;
+    }
+    100% {
+        box-shadow: 0px 0px 30px 2px #7bbf2b;
+    }
+}
+
+@keyframes parpadeoSolido {
+    0% {
+        background-color:  transparent;
+    }
+    50% {
+        background-color: #7bbf2b;
+    }
+    100% {
+        background-color:  transparent;
+    }
+}
+
+@media (min-width:600px) {
+    #inicio {
+        .toolsDiv {
+            .tool {
+                width: 33%;
+            }
+        }
+    }
+}
+
+@media (min-width:800px) {
+    #inicio {
+        .toolsDiv {
+            .tool {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    #inicio {
+        .toolsDiv {
+            .tool {
+                width:20%;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    #inicio {
+        .toolsDiv {
+            .tool {
+                width: 10%;
+            }
+        }
+    }
+}

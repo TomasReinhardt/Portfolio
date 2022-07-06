@@ -1,0 +1,29 @@
+<div id="inicio">
+    <div class="imgPerfil">
+        <img src="{{imgPerfil}}" alt="imagenPerfil">
+    </div>
+    <div class="description">
+        <h3>✨ &nbsp; Un poco de mí &nbsp; ✨</h3>
+        <p>
+            {{descriptionPerfil}}
+        </p>
+    </div>
+    <div class="CV">
+        <a href="{{CV}}" target="_blank">
+            <span>
+                CV
+            </span>
+        </a>
+    </div>
+    <div class="toolsDiv">
+        <div class="titleTools">
+            <h3>Mis herramientas</h3>
+        </div>
+        <div class="tool" *ngFor="let icon of icons">
+            <div class="aux">
+                <img src="{{icon.link}}" alt="icon">
+                <span>{{icon.name}}</span>
+            </div>
+        </div>
+    </div>
+</div>

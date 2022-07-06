@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+}
+.login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/css/img/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .formLogin {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin-top: 20px;
+        .err {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            border-radius: 30px;
+            border: 1px dashed lightcoral;
+            background-color: transparent;
+            color: lightcoral;
+        }
+        form {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: transparent;
+            border-radius: 20px;
+            padding: 35px 20px;
+
+            input[type="text"],
+            input[type="password"] {
+                width: 90%;
+                margin-bottom: 20px;
+                padding: 0px 20px;
+                border-radius: 20px;
+                border: 3px dashed #7bbf2b;
+                color: #7bbf2b;
+                background-color: transparent;
+            }
+            input[type="text"]:focus,
+            input[type="password"]:focus {
+                outline: none;
+            }
+            input:-webkit-autofill { 
+                -webkit-background-clip: text;
+            }
+
+            .buttonLogin {
+                width: 100%;
+                text-align: center;
+
+                input[type="submit"] {
+                    padding: 10px 15px;
+                    border-radius: 30px;
+                    border: 1px dashed #7bbf2b;
+                    color: #7bbf2b;
+                    background-color: transparent;
+                    transition: all 300ms;
+                }
+                input[type="submit"]:hover {
+                    color: black;
+                    background-color: #7bbf2b;
+                }
+            }
+
+        }
+    }
+}

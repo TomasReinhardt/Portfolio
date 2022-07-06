@@ -1,0 +1,198 @@
+#editInicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+#editInicio ngx-dropzone {
+  border: 1px dashed #7bbf2b;
+  color: #7bbf2b;
+  background-color: transparent;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#editInicio .buttonRemoveFile {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px dashed #7bbf2b;
+  cursor: pointer;
+}
+
+#editInicio h3 {
+  width: 100%;
+  height: 25px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+#editInicio button {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #7bbf2b;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#editInicio button:hover {
+  background-color: transparent;
+  color: #7bbf2b;
+  border: 1px solid #7bbf2b;
+}
+
+#editInicio .imgPerfil {
+  margin-top: 30px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#editInicio .imgPerfil h3 {
+  margin-bottom: 10px;
+}
+
+#editInicio .imgPerfil ngx-dropzone {
+  height: 200px;
+  width: 200px;
+  border-radius: 40px;
+}
+
+#editInicio .infoPerfil {
+  width: 80%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#editInicio .infoPerfil textarea {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #7bbf2b;
+  border: 1px dashed #7bbf2b;
+}
+
+#editInicio .infoPerfil ngx-dropzone {
+  height: auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+#editInicio .toolsDiv {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#editInicio .toolsDiv div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+#editInicio .toolsDiv div img {
+  width: 70px;
+  height: 70px;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+#editInicio .toolsDiv div svg {
+  cursor: pointer;
+}
+
+#editInicio .toolsDiv ngx-dropzone {
+  height: auto;
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#editInicio .toolsDiv input {
+  width: 60%;
+  margin-top: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #7bbf2b;
+  border: 1px dashed #7bbf2b;
+}
+
+#editInicio ngx-dropzone:hover {
+  border: 1px dashed transparent;
+  color: black;
+  background-color: #7bbf2b;
+}
+
+@media (min-width: 600px) {
+  #editInicio .toolsDiv .tool {
+    width: 33%;
+  }
+}
+
+@media (min-width: 800px) {
+  #editInicio .toolsDiv .tool {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #editInicio .toolsDiv .tool {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #editInicio .toolsDiv .tool {
+    width: 10%;
+  }
+}
+/*# sourceMappingURL=edit-icicio.component.css.map */

@@ -1,0 +1,66 @@
+<div id="editInicio" *ngIf="!loading">
+    <div class="imgPerfil">
+        <h3>Foto perfil</h3>
+        <ngx-dropzone (change)="onSelect($event)"  *ngIf="typeImg != 'application/pdf'">
+            <ngx-dropzone-label>Click o Arrastrar y soltar</ngx-dropzone-label>
+            <ng-container *ngFor="let f of files">
+                <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" [file]="f" [removable]="true" (removed)="onRemove(f)" *ngIf="typeImg != 'application/pdf'">
+                </ngx-dropzone-image-preview>
+            </ng-container>
+        </ngx-dropzone>
+        <span class="buttonRemoveFile" *ngIf="typeImg == 'application/pdf'">
+            <h5>{{files[0].name}}</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" (click)="onRemove(files[0])">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg> 
+        </span>
+        <button (click)="uploadImage('perfil')">Actualizar</button>
+    </div>
+    <div class="infoPerfil">
+        <h3>CV</h3>
+        <ngx-dropzone (change)="onSelect($event)"  *ngIf="typeImg != 'application/pdf'">
+            <ngx-dropzone-label>Click o Arrastrar y soltar</ngx-dropzone-label>
+            <ng-container *ngFor="let f of files">
+                <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" [file]="f" [removable]="true" (removed)="onRemove(f)" *ngIf="typeImg != 'application/pdf'">
+                </ngx-dropzone-image-preview>
+            </ng-container>
+        </ngx-dropzone>
+        <span class="buttonRemoveFile" *ngIf="typeImg == 'application/pdf'">
+            <h5>{{files[0].name}}</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" (click)="onRemove(files[0])">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg> 
+        </span>
+        <h3>Descripción</h3>
+        <textarea name="description" #description [(ngModel)]="descriptionPerfil"> </textarea>
+        <button (click)="uploadImage('info')">Actualizar</button>
+    </div>
+    <div class="toolsDiv">
+        <div *ngFor="let icon of icons, let i=index" class="tool">
+            <img src="{{icon.link}}" alt="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" (click)="deleteTool(i)">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+        </div>
+        <ngx-dropzone (change)="onSelect($event)"  *ngIf="typeImg != 'application/pdf'">
+            <ngx-dropzone-label>Click o Arrastrar y soltar</ngx-dropzone-label>
+            <ng-container *ngFor="let f of files">
+                <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" [file]="f" [removable]="true" (removed)="onRemove(f)" *ngIf="typeImg != 'application/pdf'">
+                </ngx-dropzone-image-preview>
+            </ng-container>
+        </ngx-dropzone>
+        <span class="buttonRemoveFile" *ngIf="typeImg == 'application/pdf'">
+            <h5>{{files[0].name}}</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" (click)="onRemove(files[0])">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg> 
+        </span>
+        <input placeholder="Nombre" type="text" name="iconName" #iconName [(ngModel)]="nameIcon">
+        <button (click)="uploadImage('tool')">agregar</button>
+    </div>
+</div>
+<div class="loadingAPI" *ngIf="loading">
+    <span>
+      <span></span>
+    </span>
+  </div>

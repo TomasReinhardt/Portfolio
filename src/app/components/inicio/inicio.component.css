@@ -1,0 +1,281 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+}
+
+#inicio .imgPerfil {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+#inicio .imgPerfil img {
+  width: 80%;
+  max-width: 200px;
+  border-radius: 100%;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: parpadeo;
+          animation-name: parpadeo;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#inicio .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+#inicio .description h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+#inicio .description p {
+  font-size: 28px;
+  text-align: justify;
+}
+
+#inicio .CV {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+#inicio .CV a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 100%;
+  border: 1px dashed transparent;
+  border-left-color: lightgreen;
+  border-right-color: lightgreen;
+  color: #7bbf2b;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+#inicio .CV a span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 100%;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#inicio .CV a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border-color: lightgreen;
+}
+
+#inicio .CV a:hover span {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0);
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: parpadeoSolido;
+          animation-name: parpadeoSolido;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#inicio .toolsDiv {
+  margin-bottom: 30px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#inicio .toolsDiv .titleTools {
+  width: 100%;
+}
+
+#inicio .toolsDiv .titleTools h3 {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 30px;
+  border-bottom: 1px dashed lightgreen;
+}
+
+#inicio .toolsDiv .tool {
+  width: 50%;
+}
+
+#inicio .toolsDiv .tool .aux {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 10%;
+  border-left: 1px dashed lightgreen;
+  border-right: 1px dashed lightgreen;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+#inicio .toolsDiv .tool .aux img {
+  width: 80px;
+  height: 80px;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+#inicio .toolsDiv .tool .aux span {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 22px;
+  color: black;
+  display: none;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#inicio .toolsDiv .tool .aux:hover {
+  border-radius: 100%;
+  border: 1px dashed #7bbf2b;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-color: #7bbf2b;
+}
+
+#inicio .toolsDiv .tool .aux:hover img {
+  display: none;
+}
+
+#inicio .toolsDiv .tool .aux:hover span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    -webkit-box-shadow: 0px 0px 30px 2px #7bbf2b;
+            box-shadow: 0px 0px 30px 2px #7bbf2b;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 30px 2px transparent;
+            box-shadow: 0px 0px 30px 2px transparent;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 30px 2px #7bbf2b;
+            box-shadow: 0px 0px 30px 2px #7bbf2b;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    -webkit-box-shadow: 0px 0px 30px 2px #7bbf2b;
+            box-shadow: 0px 0px 30px 2px #7bbf2b;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 30px 2px transparent;
+            box-shadow: 0px 0px 30px 2px transparent;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 30px 2px #7bbf2b;
+            box-shadow: 0px 0px 30px 2px #7bbf2b;
+  }
+}
+
+@-webkit-keyframes parpadeoSolido {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #7bbf2b;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes parpadeoSolido {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #7bbf2b;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 600px) {
+  #inicio .toolsDiv .tool {
+    width: 33%;
+  }
+}
+
+@media (min-width: 800px) {
+  #inicio .toolsDiv .tool {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #inicio .toolsDiv .tool {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #inicio .toolsDiv .tool {
+    width: 10%;
+  }
+}
+/*# sourceMappingURL=inicio.component.css.map */
