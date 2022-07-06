@@ -40,10 +40,7 @@ export class WebsEjComponent implements OnInit {
   getProjects() {
     this._DataService.getrPojects().subscribe(
       response => {
-        for (let i = 0; i < 8; i++) {
-          this.Projects.push(response.result[0]);
-        }
-        console.log(this.Projects)
+        this.Projects = response.result;
       },
       err => {
         console.log("-------------------------");
