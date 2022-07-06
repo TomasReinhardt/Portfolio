@@ -204,6 +204,11 @@
   margin: 0 auto;
 }
 
+#webEj #projects .auxInfoP .infoP .boxInfo ul li a {
+  text-decoration: none;
+  color: #7bbf2b;
+}
+
 @-webkit-keyframes borderRotate {
   from {
     -webkit-transform: rotate(0deg);
