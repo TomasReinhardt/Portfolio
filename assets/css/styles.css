@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Amatic';
+  src: url("./fonts/Amatic/AmaticSC-Regular.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Amatic';
+  background-color: #0f0f0f;
+  color: #7bbf2b;
+}
+
+.carouselMenu {
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  font-size: 20px;
+}
+
+.carouselMenu button {
+  width: 33.33333%;
+  border: none;
+  background-color: #0f0f0f;
+  color: #7bbf2b;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  font-size: 35px;
+}
+
+.carouselMenu button:hover, .carouselMenu .activo {
+  background-color: #7bbf2b;
+  color: #272727;
+}
+
+.carousel-inner #item1, .carousel-inner #item2, .carousel-inner #item3 {
+  background-image: url("./img/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-inner #item1 .title, .carousel-inner #item2 .title, .carousel-inner #item3 .title {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-top: 60px;
+  min-height: 50;
+}
+
+.carousel-inner #item1 .info, .carousel-inner #item2 .info, .carousel-inner #item3 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+.carousel-inner #item1 .info h4, .carousel-inner #item2 .info h4, .carousel-inner #item3 .info h4 {
+  width: 100%;
+  font-size: 32px;
+}
+
+.loadingAPI {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  align-items: center;
+  background-image: url("./img/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loadingAPI span {
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  -webkit-animation: rotateLoading;
+          animation: rotateLoading;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-box-shadow: 0px 0px 3px 1px #7bbf2b, inset 0px 0px 3px 2px #7bbf2b;
+          box-shadow: 0px 0px 3px 1px #7bbf2b, inset 0px 0px 3px 2px #7bbf2b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loadingAPI span span {
+  width: 200px;
+  height: 200px;
+  -webkit-animation: rotateLoading2;
+          animation: rotateLoading2;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes rotateLoading {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateLoading {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes rotateLoading2 {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateLoading2 {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-inner #item1 .title h2, .carousel-inner #item2 .title h2, .carousel-inner #item3 .title h2 {
+    font-size: 40px !important;
+  }
+  .carousel-inner #item1 .info h4, .carousel-inner #item2 .info h4, .carousel-inner #item3 .info h4 {
+    font-size: 27px !important;
+  }
+  .carousel-inner #item1 #containerIcons div span, .carousel-inner #item2 #containerIcons div span, .carousel-inner #item3 #containerIcons div span {
+    font-size: 25px !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
