@@ -66,6 +66,8 @@ export class EditwebsComponent implements OnInit {
   }
 
   assignProject(id:number) {
+    this.Project.description = this.typeProject+"//"+this.Project.description;
+
     this.Project = {
       id: 0,
       name: "",
