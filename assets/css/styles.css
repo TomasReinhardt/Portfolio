@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'ShadowsIntoLight';
-  src: url("./fonts/Shadows_into_Light/ShadowsIntoLight-Regular.ttf");
+  font-family: 'MPLUS1';
+  src: url("./fonts/MPLUS1/MPLUS1Code-VariableFont_wght.ttf");
 }
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'ShadowsIntoLight';
+  font-family: 'MPLUS1';
   background-color: #0f0f0f;
   color: #7bbf2b;
 }
